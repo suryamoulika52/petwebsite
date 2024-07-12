@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Update data-bs-toggle attribute to use "+" symbol
+      $('.accordion-button').each(function(){
+        $(this).attr('data-bs-toggle', 'collapse');
+      });
+    });
+  </script>
+   <style>
+      *{
+        font-family:sans-serif;
+      }
+        .custom-image {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%; 
+      background-color:rgb(216, 213, 213);
+    }
+
+    .col-4 {
+      width: 30%; 
+      height: 60%;  
+    }
+    
+    .row2 {
+      display: flex;
+      align-items: center;
+    }
+    .card1,.card3
+    {
+      text-align:right;
+    }
+    .card2,.card4
+    {
+     
+      height:60%;
+    
+     
+      text-align:left;
+    }
+    .card4{
+        margin-right: 20px;
+        width:100%;
+    }
+    .card2{  width:90%;
+        margin-left:30px;
+    }
+    .center-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .center-image img {
+      max-width: 100%;
+      max-height: 100%;
+     margin-left: 200px;
+    }
+
+    .gridh
+    {
+      font-size:20px;
+      font-weight:bold;
+      font-family:sans-serif;
+      padding:2px;
+      margin-left: 130px;
+    }
+    .gridp
+    {
+      font-size:16px;
+      font-family:sans-serif;
+      padding:2px;
+      margin-left: 130px;
+      opacity:77%;
+    }
+    .timeline-point {
+    align-items: center;
+    color: #5e5e5e;
+    display: flex;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 38px;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.circle{
+    border:2px solid black;
+    height:30px;
+    width:30px;
+    border-radius: 15px;
+ 
+}
+.timeline-point{
+background-color: black;
+    height:17px;
+    width:17px;
+    border-radius:8px;
+ margin:5px 0px 0px 5px;
+ padding:0;
+}
+.timeline-line{
+    background-color: black;
+    width:2px;
+    height:140px;
+    display: inline-block;
+    margin:0px 0px 0px 13px;
+}
+#herosecimg {
+            width: 100%;            
+       background-image: url("traininghero.jpg");
+      opacity:87%;
+          background-repeat: no-repeat;
+          background-size: cover;
+            height:350px;    
+        }
+        #hsec{
+            font-size:60px;
+            font-weight: bold;
+            color:white; 
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+           padding-top: 40px;
+           padding-bottom:30px;
+        }
+        #psec{
+            color:black;     
+       font-size:28px;       
+            justify-content: center;
+          align-items: center;
+          text-align: center;        
+            padding-bottom:25px;
+            opacity:87%;
+        }
+        #pet ul {
+    list-style: none;
+    padding: 0;
+  }
+  #pet.show {
+    display: flex;
+  }
+  
+  #pet li .dropdown-item {
+    color: gray;
+    font-size:large;
+    padding: 0.5em 1em;
+  }
+  #pet {
+    border: none;
+    border-radius: 0;
+    padding: 0.7em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  .dropdown:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+
+.dropdown-menu:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+#petc{
+ color:black;
+ border:none;
+ font-size:large;
+}
+  
+  .navbar-dark .navbar-nav a.nav-link {
+    color: #ffffff00;
+    font-size:large;
+  }
+ #petd{
+  margin-left:160px;
+ }
+ #btnhero{
+    color:white;
+    width:350px;
+    height:50px;
+  margin-left: 480px; 
+  font-family: sans-serif;  
+  font-size:x-large;      
+ }
+
+        </style>
+        
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg" style="align-items: center;">
+        <div class="container-fluid d-flex justify-content-center align-items-center mt-4">
+          <a class="navbar-brand" href="#">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.0e98UGXIqQePbC8EE0BcFQHaFj&pid=Api&P=0&h=180" alt="Avatar Logo" style="width:100px;" class="rounded-pill"> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav">
+              <li class="nav-item" id="petd">
+                <a class="nav-link" href="#" id="petc" >
+                  Home
+                </a>
+                
+              </li>
+              <div class="dropdown">
+                <button class="btn  dropdown-toggle" id="petc" data-bs-toggle="dropdown">
+                  Services
+                </button>
+                <ul class="dropdown-menu" style="opacity:0.9;" >
+                  <li><a class="dropdown-item" href="#">Veterinarian</a></li>
+                  <li><a class="dropdown-item" href="#">Vaccination</a></li>
+                  <li><a class="dropdown-item" href="#">Healthcheckup</a></li> 
+                  <li><a class="dropdown-item" href="#">Consultation</a></li>
+                  <li><a class="dropdown-item" href="#">Emergency</a></li>             
+                </ul>
+              </div>
+               
+                <li class="nav-item" >
+                    <a class="nav-link" href="#" id="petc"> About</a>
+                  </li>
+                  <li class="nav-item" id="petc">
+                    <a class="nav-link" href="#" id="petc">Blog</a>
+                  </li>
+                 
+            </li>      
+          </li>
+           </ul>     
+          </div> 
+       
+        
+      </nav>
+    <!--hero section-->
+   
+    <h1 id="vetd"></h1>
+    <div class="container-fluid" id="herosecimg">
+      
+      <h1  id="hsec">Dog training service</h1>
+      
+      <p id="psec">Dog friendly training can be made through an appointment anytime  via online booking </p>
+  <div class="btn btn-rounded btn-warning" id="btnhero">Get started</div>
+  </div> 
+    <!--aboutus-->
+    <h1 style="padding:40px;text-align: center;">Why choose us</h1>
+    <div class="row row1">
+        <div class="col-5">
+            <div class="card1">
+                <i class="far fa-credit-card fa-lg" style="color: #B197FC;"></i>
+               
+                <h1 class="gridh">Secure payment</h1>
+                <p class="gridp">It holds funds until job done and flexible payment</p>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="card2">
+              <i class="fas fa-user-check fa-lg" style="color: #B197FC;margin-left:135px;"></i>
+                <h1 class="gridh">Verified petmasters</h1>
+                <p class="gridp">We personally verify and train all pet masters to provide the best</p>
+            </div>
+        </div>
+    </div>
+    <div class="row row2">
+        <div class="col-4">
+            <div class="card3">
+                <i class="fas fa-users fa-lg" style="color:#B197FC;"></i>
+                <h1 class="gridh">Happy customers</h1>
+                <p class="gridp">It is loved for providing professional pet masters that offer a satisfaction guarantee to instill confidence in potential clients. </p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="center-image">
+                <img src="choosetraining.jpg"
+                    alt="sports" class="custom-image" />
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card4">
+              <i class="fas fa-tools fa-lg" style="color: #B197FC;margin-left:130px;"></i>
+                <h1 class="gridh">Innovative Training Tools or Technology</h1>
+                <p class="gridp">We choose any innovative tools, technology, or methods you use in your training programs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row3">
+        <div class="col-5">
+            <div class="card1">
+             
+              <i class="fas fa-map-marker-alt fa-lg" style="color: #B197FC;"></i>
+            
+                <h1 class="gridh">Convenient Scheduling and Locations</h1>
+                <p class="gridp">Emphasize flexibility in scheduling training sessions to accommodate clients with busy lifestyles.</p>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="card2">
+              <i class="fas fa-tasks fa-lg" style="color: #B197FC;margin-left:135px;"></i>
+                <h1 class="gridh">Training Progress Tracking</h1>
+                <p class="gridp">Offer a system for tracking and sharing the progress of the pets with their owners. This can include regular updates, milestone celebrations, and feedback sessions</p>
+            </div>
+        </div>
+    <button class="btn btn-warning" style="width:300px;margin-left: 535px;">Get Started</button>
+<!--steps-->
+<div style="background-color: #f1eeee;margin-top: 45px;height:600px;">
+<h1 style="padding:35px;text-align: center;">How pet training works</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6">
+        <img src="trainingworking.jpg" style="margin-left:100px;width:420px;height:420px;border-radius:130px;">
+    </div>
+    <div class="col-1">
+   <div class="circle">
+        <div class="timeline-point"></div>
+    </div>
+   
+    <span class="timeline-line"></span>
+    <div class="circle">
+      <div class="timeline-point"></div>
+  </div>
+  <span class="timeline-line"></span>
+  <div class="circle">
+    <div class="timeline-point"></div>
+</div>
+  </div>
+    <div class="col-4">
+      <div class="timeline-item-content">
+        <h1 style="font-size:24px;font-weight:bold;opacity:87%;">Book your session for free</h1>
+    <p style="opacity:77%">In this session,we assess your pet for free</p>
+      </div><br><br><br><br>
+      <div class="timeline-item-content">
+        <h1 style="font-size:24px;font-weight:bold;opacity:87%;">Select your package</h1>
+    <p style="opacity:77%">It helps to understand purpose of training and we customize curriculum accordingly</p>
+      </div><br><br><br>
+      <div class="timeline-item-content">
+        <h1 style="font-size:24px;font-weight:bold;opacity:87%;">Pay and start training session</h1>
+    <p style="opacity:77%">Pay through UPI,payment apps.</p>
+      </div>
+    </div>
+</div>
+</div>   
+</div>
+<!--Benefits-->
+<div class="container-fluid" style="padding:70px;">
+
+  <h1>Benefits of pet training</h1>
+  <br><br>
+  <div class="row">
+      <div class="col-md-6">
+        
+          <p style="font-size:19px;opacity:77%;">
+            <i class="fas fa-check-circle fa-lg" style="color:#ffd43b;margin-right:20px;"></i>
+         Pet training contributes positive relationship between dogs and their owners.</p>         
+          <p style="font-size:19px;opacity:77%;">
+            <i class="fas fa-check-circle fa-lg" style="color:#ffd43b;margin-right:20px;"></i>
+            Dog training helps in elimation of undesirable behaviours</p> 
+        <p style="font-size:19px;opacity:77%;"><i class="fas fa-check-circle fa-lg" style="color:#ffd43b;margin-right:20px;"></i>
+          Training facilitates positive social interactions with other dogs, animals, and people
+        </p>      
+           <p style="font-size:19px;opacity:77%;">
+            <i class="fas fa-check-circle fa-lg" style="color:#ffd43b;margin-right: 20px;"></i>Training sessions engage a dog's mind, providing mental stimulation that encourages problem-solving.</p>
+           <p style="font-size:19px;opacity:77%;"> <i class="fas fa-check-circle fa-lg" style="color:#ffd43b;margin-right: 20px;"></i>Training activities involve physical exercise, contributing to a dog's overall health and fitness.</p>
+           <p style="font-size:19px;opacity:77%;"><i class="fas fa-check-circle fa-lg" style="color:#ffd43b;margin-right:20px;"></i>
+            Training facilitates positive social interactions with other dogs, animals, and people
+          </p>  
+              
+          </div>
+       
+      <div class="col-md-6">
+          <img src="trainingbenefits.jpg" class="img-fluid" style="border-radius: 130px;">
+      </div>
+  </div>
+
+</div>
+<!--packages-->
+<h1 style="margin-bottom:60px;text-align: center;">Dog training packages</h1>
+<div class="container">
+  <div class="row">
+  <div class="col-4">
+  <div class="card" style="width: 18rem;margin-left:120px;">
+    <img class="card-img-top" src="basicpackage.jpg" alt="Card image cap" style="height:220px;">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align:center;font-weight: bold;color:#6d45e4;">BASIC PACKAGE</h5>
+      <p class="card-text" style="opacity:0.7;text-align: center;">24 Sessions | 2 Months</p>
+      <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Loose leash walking</p>
+      <p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Polite greeting</p>
+      <p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Stand/Stay</p>
+      <p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Sit/No Commands</p>
+      <p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Excessive barking</p>
+      <p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Diet Chart</p>
+      <p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Feedback Intelligence</p>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Extra Benefits
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>20% Off on first booking</p>
+          <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Long term support</p>
+          <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Professional guidance</p>
+        </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Requirements
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Dogs must have their full round of vaccinations prior to starting these sessions</p>
+              <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>This package is for puppies & dogs 5 months and older</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>  
+      
+      <i class="fas fa-rupee-sign fa-lg" style="margin-left:84px;margin-top:15px;font-weight:bolder;font-size: xx-large;">9000</i>
+    </div>
+  </div>
+  </div>
+  <div class="col-4">
+  <div class="card" style="width: 18rem;margin-left:110px;">
+    <img class="card-img-top" src="intermediatepackage.jpg" alt="Card image cap" style="height:220px;">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;font-weight: bold;color:#6d45e4;">INTERMEDIATE PACKAGE</h5>
+      <p class="card-text" style="opacity:0.7;text-align: center;">48 Sessions | 4 months</p>
+      <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Advanced Loose leash walking</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Advanced Off leash walking</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Social Ettiques</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Smart Commands</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Advanced potty</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Diet Chart</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Advanced play</p>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Extra Benefits
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>20% Off on first booking</p>
+    <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Long term support</p>
+    <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Professional guidance</p>
+  </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Requirements
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Dogs must have their full round of vaccinations prior to starting these sessions</p>
+        <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>This package is for puppies & dogs 5 months and older</p>
+      </div>
+    </div>
+  </div>
+  
+</div>  
+
+<i class="fas fa-rupee-sign fa-lg" style="margin-left:73px;margin-top:15px;font-weight:bolder;font-size: xx-large;">25000</i>
+      
+    </div>
+  </div>
+  </div>
+  <div class="col-4">
+  <div class="card" style="width: 18rem;margin-left:100px;">
+    <img class="card-img-top" src="advancedtraining.jpg" alt="Card image cap" style="height:220px;">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;font-weight:bold;color:#6d45e4;">ADVANCED PACKAGE</h5>
+      <p class="card-text" style="opacity:0.7;text-align: center;">72 Sessions | 6 months</p>
+<p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>All Basic commands</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Heal walk</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Rollover</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Fetch</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Swimming</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Sitting</p>
+<p> <i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Handshake</p>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Extra Benefits
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>20% Off on first booking</p>
+    <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Long term support</p>
+    <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Professional guidance</p>
+  </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Requirements
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>This package is for puppies & dogs 5 months and older</p>
+        <p><i class="fas fa-check" style="color: #B197FC;margin-right:15px;"></i>Be prepared to practice daily for at least 30 minutes</p>
+      </div>
+    </div>
+  </div>
+  
+</div>  
+
+<i class="fas fa-rupee-sign fa-lg" style="margin-left:73px;margin-top:15px;font-weight:bolder;font-size: xx-large;">35000</i>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+<!--trainees-->
+
+<!--review-->
+<!--faq-->
+</body>
+</html>

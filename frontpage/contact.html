@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        #col1{
+           justify-content: center;
+            height:500px;
+            background-image:url("dogcontact.jpg");
+           background-repeat: no-repeat;
+        background-size: cover;
+background-color:rgba(255, 255, 255, 0.2);
+text-align: center;
+        }
+        #col2{
+            background-color:#CBD1D6;
+            height:500px;
+        }
+        #name,#email,#phn,#subject{
+          width:400px;
+          height:53px;
+          margin-left:25px;
+        }
+        
+        #subject1{
+          width:400px;
+          height:75px;
+          margin-left:25px;
+        }
+        .co{
+          margin-top: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container m-400 mt-5">
+        <div class="row">
+        <div class="col-6" id="col1">
+          <div class="co">
+            <h1 style="color:white;font-weight: bold;">Contact Us</h1>
+            <p style="color:white;">We are here to meet your needs,the advice you provide is highly expected to improve quality and comfort of your needs.</p>       
+            <img width="34" height="36" src="https://img.icons8.com/ios-filled/50/FFFFFF/secured-letter--v1.png" alt="secured-letter--v1"/>
+            <p style="display: inline;color:white;">happytails@gmail.com</p>
+            <p style="display:block;color:white;margin-right:76px;">
+              <img width="40" height="36" src="https://img.icons8.com/ios-filled/50/FFFFFF/apple-phone.png" alt="apple-phone"/>
+        9778845888</p>
+            <span style="margin-right: 23px;">
+              <img width="45" height="45" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-new.png" alt="facebook-new"/>
+              <img width="49" height="49" src="https://img.icons8.com/glyph-neue/64/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
+              <img width="45" height="45" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>
+              <img width="45" height="45" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitterx.png" alt="twitterx"/>
+
+            </span>
+          </div>
+          </div>
+        <div class="col-6" id="col2">
+          <p style="text-align: center;font-weight: bold;font-size:xx-large;margin-top:10px;">Get in touch</p>
+            <div class="mb-3 mt-3"> 
+                <input type="name" class="form-control" id="name" placeholder="Enter Full name" name="email">
+              </div>
+          <div class="mb-3 mt-3">          
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="mb-3">
+            <input type="number" class="form-control" id="phn" placeholder="Enter phone number" name="pswd">
+          </div>
+          <div class="mb-3">          
+            <input type="name" class="form-control" id="subject" placeholder="Enter subject" name="pswd">
+          </div>
+          <div class="mb-3">                  
+       <textarea class="form-control" id="subject1" name="pswd" placeholder="Write Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-left: 140px;width:130px;">Submit</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

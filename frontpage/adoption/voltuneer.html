@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            height:1030px;
+        }
+       /*left img*/
+        #col1 {
+            height: 980px;
+            background-image: url("adoptionpet.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.2);
+            text-align: center;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*right side form*/
+        #col2 {
+            height: 980px;
+            width: 500px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6" id="col1">
+                <!-- left img -->
+            </div>
+            <div class="col-md-6" id="col2">
+                <h2 class="text-center mb-4">Dogs for Adoption</h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Enter Full Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Enter Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" placeholder="Enter Phone Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" placeholder="Enter Age" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="mr-3">Gender:</label><br>
+                        <input type="radio" name="gender" value="male" required> Male<br>
+                        <input type="radio" name="gender" value="female" required> Female
+                    </div>
+                  
+                   
+                    <div class="mb-3">
+                        <label>Ability to Commit to Regular Volunteer Shift:</label><br>
+                        <input type="radio" name="regular_shift" value="yes" required> Yes<br>
+                        <input type="radio" name="regular_shift" value="no" required> No
+                    </div>
+                    <div class="mb-3">
+                        <label>Availability (select all that apply):</label><br>
+                        <input type="checkbox" name="availability" value="morning"> Morning (8:00 AM - 12:00 PM)<br>
+                        <input type="checkbox" name="availability" value="afternoon"> Afternoon (12:00 PM - 4:00 PM)<br>
+                        <input type="checkbox" name="availability" value="evening"> Evening (4:00 PM - 8:00 PM)<br>
+                    </div>
+                    <div class="mb-3">
+                        <label>Specific Areas of Interest:</label><br>
+                        <input type="checkbox" name="interest" value="dog_walking"> Dog Walking<br>
+                        <input type="checkbox" name="interest" value="event_planning"> Event Planning<br>
+                        <input type="checkbox" name="interest" value="administrative_tasks"> Administrative Tasks<br>
+                    </div>
+                    <div class="mb-3">
+                        <textarea type="text" class="form-control" placeholder="Any Previous Experience"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <textarea type="text" class="form-control" placeholder="Reason for Applying"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" placeholder="Enter Address" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-left: 165px;width:100px;">Submit</button>
+                </form>
+            </div><br><br>
+        </div>
+    </div>
+</body>
+</html>

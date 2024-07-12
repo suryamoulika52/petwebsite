@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            height:1030px;
+        }
+       /*left img*/
+        #col1 {
+            height: 980px;
+            background-image: url("adoptionpet.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.2);
+            text-align: center;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*right side form*/
+        #col2 {
+            height: 980px;
+            width: 500px;
+          
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6" id="col1">
+                <!-- left img -->
+            </div>
+            <div class="col-md-6" id="col2">
+                <h2 class="text-center mb-4">Dogs for Adoption</h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Enter Full Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Enter Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" placeholder="Enter Phone Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" placeholder="Enter Age" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="mr-3">Gender:</label><br>
+                        <input type="radio" name="gender" value="male" required> Male<br>
+                        <input type="radio" name="gender" value="female" required> Female
+                    </div>                 
+                    <div>
+                        <label for="donation_amount">Donation Amount:</label><br>
+                    <select id="donation_amount" name="donation_amount">
+                        <option value="10">$10</option>
+                        <option value="25">$25</option>
+                        <option value="50">$50</option>
+                        <option value="100">$100</option>
+                        <option value="custom">Custom Amount</option>
+                    </select><br>
+                  
+                </div><br>
+                   
+                <div>
+                    <label for="frequency">Frequency:</label><br>
+                    <input type="radio" id="one_time" name="frequency" value="one_time">
+                    <label for="one_time">One-time Donation</label><br>
+                    <input type="radio" id="monthly" name="frequency" value="monthly">
+                    <label for="monthly">Monthly</label><br>
+                    <input type="radio" id="quarterly" name="frequency" value="quarterly">
+                    <label for="quarterly">Quarterly</label><br>
+                    <input type="radio" id="annually" name="frequency" value="annually">
+                    <label for="annually">Annually</label><br>
+                </div><br>
+                <div>
+                    <label for="donation_purpose">Donation Purpose:</label><br>
+                    <select id="donation_purpose" name="donation_purpose">
+                        <option value="general">General Use</option>
+                        <option value="medical_expenses">Medical Expenses</option>
+                        <option value="food">Food</option>
+                        <option value="shelter_maintenance">Shelter Maintenance</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div><br>
+              
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Enter Address" required></textarea>
+                </div>
+                
+                <div>
+                    <label for="payment_method">Payment Method:</label><br>
+                    <input type="radio" id="credit_card" name="payment_method" value="credit_card" checked>
+                    <label for="credit_card">Credit Card</label><br>
+                    <input type="radio" id="paypal" name="payment_method" value="paypal">
+                    <label for="paypal">PayPal</label><br>
+                </div><br>
+              
+                    <button type="submit" class="btn btn-primary" style="margin-left: 165px;width:100px;">Submit</button>
+                </form>
+            </div><br><br>
+        </div>
+    </div>
+</body>
+</html>

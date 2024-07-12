@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+      *{
+        font-family: sans-serif;
+      }
+        #pet ul {
+    list-style: none;
+    padding: 0;
+  }
+  #pet.show {
+    display: flex;
+  }
+  
+  #pet li .dropdown-item {
+    color: gray;
+    font-size:large;
+    padding: 0.5em 1em;
+  }
+  #pet {
+    border: none;
+    border-radius: 0;
+    padding: 0.7em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  .dropdown:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+
+.dropdown-menu:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+#petc{
+ color:black;
+ border:none;
+ font-size:large;
+}
+  
+  .navbar-dark .navbar-nav a.nav-link {
+    color: #ffffff00;
+    font-size:large;
+  }
+ #petd{
+  margin-left:160px;
+ }
+  
+ 
+ 
+ 
+ #herosecimg {      
+   background-image: url("petd.jpg");
+    width:100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+       height: 380px;
+       margin-top:25px;
+       opacity:0.84;    
+    }
+    #hsec{
+        font-size:40px;
+        color:#3b09ef; 
+        margin-left: 280px;
+       padding-top: 80px;
+       padding-bottom:30px;
+    }
+    #psec{
+        color:black;
+        opacity:0.8;
+      
+        font-size:20px;
+        width:900px; 
+        margin-left:200px; 
+        padding-bottom:20px;
+    }
+    #g{
+      justify-content: right;
+      margin-top:50px;
+      margin-left: 80px;
+  }
+  
+  
+  .carousel-item img {
+      width: 550px; 
+      height: 300px; 
+      object-fit: cover; 
+      margin: auto; 
+    }
+  
+   
+    .carousel-control-prev, .carousel-control-next {
+      width: 85%;
+
+    }
+    
+#art{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+}
+    </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+</head>
+<body>
+  <!--navbar-->
+    <nav class="navbar navbar-expand-lg" style="align-items: center;">
+        <div class="container-fluid d-flex justify-content-center align-items-center mt-4">
+          <a class="navbar-brand" href="#">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.0e98UGXIqQePbC8EE0BcFQHaFj&pid=Api&P=0&h=180" alt="Avatar Logo" style="width:100px;" class="rounded-pill"> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav">
+              <li class="nav-item" id="petd">
+                <a class="nav-link" href="#" id="petc" >
+                  Home
+                </a>
+                
+              </li>
+              <div class="dropdown">
+                <button class="btn  dropdown-toggle" id="petc" data-bs-toggle="dropdown">
+                  Services
+                </button>
+                <ul class="dropdown-menu" style="opacity:0.9;" >
+                  <li><a class="dropdown-item" href="#">Veterinarian</a></li>
+                  <li><a class="dropdown-item" href="#">Vaccination</a></li>
+                  <li><a class="dropdown-item" href="#">Healthcheckup</a></li> 
+                  <li><a class="dropdown-item" href="#">Consultation</a></li>
+                  <li><a class="dropdown-item" href="#">Emergency</a></li>             
+                </ul>
+              </div>
+               
+                <li class="nav-item" >
+                    <a class="nav-link" href="#" id="petc"> About</a>
+                  </li>
+                  <li class="nav-item" id="petc">
+                    <a class="nav-link" href="#" id="petc">Blog</a>
+                  </li>
+                 
+            </li>      
+          </li>
+           </ul>     
+          </div> 
+       
+        
+      </nav>
+      <!--herosection-->
+      <div class="container-fluid" id="herosecimg">
+        <h1  id="hsec">Consultation of Veterinarian anytime</h1>
+        <p id="psec">The care you deerve for your pet.Book healthcare appointments for their pets. It includes different types of services, both hospital and home options, and available time slots.  </p>
+    <a href="appointment.html">
+        <button class="btn btn-rounded btn-warning" style="color:white;margin-left:540px;width:170px;height:40px;font-size:15px;">Make an appointment</button>
+    </a>
+      </div> 
+    <!--about-->
+    <div class="container" style="margin-top:60px;margin-bottom:95px;">
+      <div class="row">
+      <div class="col-5">
+   <img src="vetd.jpg" style=" 
+   width:450px;
+   height:280px; 
+       justify-content: left;
+       margin-top:43px;
+   border-radius: 50%;">
+  </div>
+ <div class="col-6" id="g">
+  <h1 style="color:#7752FE;font-size:32px;margin-top:20px;">Why choose us</h1>
+ <p style="opacity:0.5;font-size:20px;">We prioritize your pet's comfort and well-being. Our 24/7 emergency services ensure prompt care in critical situations. Experience personalized attention from our dedicated team, committed to building lasting relationships with you and your pet. Join us in our mission to promote pet health and happiness in the community
+</p>
+
+    </div>
+    </div>
+    </div>
+    <!--features-affordable,experienced-Pet Profile Management: Features allowing users to create profiles for their pets, track medical history, vaccination schedules, reminders for upcoming appointments, and medication doses.
+
+    -->
+    
+    <div class="container-fluid" style="margin-top:10px;background-color:#AEDEFC;margin-bottom:30px;height:300px;">
+      <h1 style="text-align: center;font-size:32px;font-family:sans-serif;color:#7752FE;margin-top:30px;margin-bottom:20px;">Features</h1>
+        <div class="container-fluid" style="margin-left: 155px;">
+          <div class="row" style="margin-bottom:20px;">
+          <div class="col-4">
+            <img width="50" height="50" src="https://img.icons8.com/pastel-glyph/64/7752FE/appointment-time.png" alt="appointment-time" style="margin-left:25px;"/>  
+              <p style="opacity:0.8;font-size:13px;">Easy appointment</p>    
+          </div>
+          <div class="col-4">   
+            <img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/50/7752FE/veterinarian-female.png" alt="veterinarian-female" style="margin-left:27px;"/>    
+              <p style="opacity:0.8;font-size:13px;margin-left:7px;">Experienced staff</p>           
+          </div>
+          <div class="col-4">  
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/7752FE/get-cash--v1.png" style="margin-left:23px;"/>             
+              <p style="opacity:0.8;font-size:13px;">Affordable price</p>   
+          </div>
+          </div>
+           <div class="row">
+          <div class="col-4">  
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/7752FE/treatment-plan--v1.png" alt="treatment-plan--v1" style="margin-left:24px;"/>          
+              <p style="opacity:0.8;font-size:13px;">Proper Treatment</p>     
+          </div>
+          <div class="col-4">  
+            <img width="53" height="53" src="https://img.icons8.com/ios/53/7752FE/ambulance--v1.png" alt="ambulance--v1" style="margin-left:25px;"/>      
+              <p style="opacity:0.8;font-size:13px;">Emergency service</p>     
+          </div>
+          <div class="col-4">         
+            <img width="55" height="55" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/55/7752FE/external-care-medical-kiranshastry-lineal-kiranshastry.png" alt="external-care" style="margin-left:20px;"/>
+            <p style="opacity:0.8;font-size:13px;">Personalized care</p>     
+        </div>
+        </div>
+        </div>
+    </div>   
+<!--services-->
+<div>
+  
+</div>
+    <!--veterian-->
+    <div id="doctor">
+      <div class="container" >
+        <h1 class="text-center" style="font-size:32px;margin-top:45px;margin-bottom:30px;color:#7752FE;">Our highly qualified veterinarians</h1>
+        <div class="row row1">
+          <div class="col-3">
+            <div class="card paint-card" style="width:250px;height:330px;">
+              <div class="card-body text-center">
+                <img src="https://segurancadotrabalhosempre.com/wp-content/uploads/2016/08/O6T8LS01.jpg" width="200px" height="250px">
+                <p class="fw-bold fs-5">Shalini</p>
+                <p class="fs-8">(Veterinary Anesthesiologist)</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-3">
+            <div class="card paint-card" style="width:250px;height:330px;">
+              <div class="card-body text-center">
+                <img src="https://cdn.websites.hibu.com/7780d60ef32741a5a9e5cc2636e4c3e3/DESKTOP/png/8319464.png" width="200px" height="250px" >
+                <p class="fw-bold fs-5">Dr.Ankitha</p>
+                <p class="fs-7">(Veterinary Surgeon)</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-3">
+            <div class="card paint-card" style="width:250px;height:330px;">
+              <div class="card-body text-center">
+                <img src="https://freedesignfile.com/upload/2018/03/Pet-doctor-Stock-Photo-02.jpg" width="200px" height="250px">
+                <p class="fw-bold fs-5">Dr.Shiva Kumar</p>
+                <p class="fs-7">(Veterinary Radiologist)</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-3">
+            <div class="card paint-card" style="width:250px;height:330px;">
+              <div class="card-body text-center">
+                <img src="https://thumbs.dreamstime.com/b/doctor-indian-38175791.jpg" width="200px" height="250px">
+                <p class="fw-bold fs-5">Dr. Madhuri Samuel</p>
+                <p class="fs-7">(Veterinary Pathologist)</p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    </div>
+      </div>
+<!--services-->
+
+ <h1 style="text-align: center;font-size:32px;font-family:sans-serif;color:#7752FE;margin-top:55px;margin-bottom:20px;">Book for services</h1> 
+<div class="container" style="margin-left:190px;">
+  <div class="row">
+  <div  style="background-color:#d8d9ff;width:100px;height:100px;border-radius:20px;margin-left:110px;">
+<img width="50" height="50" src="https://img.icons8.com/ios-filled/50/7F27FF/health-checkup.png" alt="health-checkup" style="margin-top:17px;margin-left:11px;"/>
+<p>Regular checkup<img width="11" height="11" src="https://img.icons8.com/ios-glyphs/11/000000/forward.png" alt="forward" style="margin-top:-30px;margin-left:75px;"/> </p> 
+</div>
+  <div  style="background-color:#d8d9ff;width:100px;height:100px;border-radius:20px;margin-left:100px;">
+    <img width="50" height="50" src="https://img.icons8.com/external-vectorslab-glyph-vectorslab/50/7F27FF/external-Doctor-Consultation-medical-vectorslab-glyph-vectorslab.png" style="margin-top:17px;margin-left:20px;"/>
+  <p style="margin-left:10px;margin-top:2px;">Consultation<img width="11" height="11" src="https://img.icons8.com/ios-glyphs/11/000000/forward.png" alt="forward" style="margin-top:-30px;margin-left:55px;"/> </p>
+  </div>
+  <div  style="background-color:#d8d9ff;width:100px;height:100px;border-radius:20px;margin-left:100px;">
+    <img width="50" height="50" src="https://img.icons8.com/external-yogi-aprelliyanto-glyph-yogi-aprelliyanto/50/7F27FF/external-vaccination-pet-shop-yogi-aprelliyanto-glyph-yogi-aprelliyanto.png" style="margin-top:17px;margin-left:14px;"/>
+  
+    <p style="margin-left:12px;margin-top:4px;">Vaccination<img width="11" height="11" src="https://img.icons8.com/ios-glyphs/11/000000/forward.png" alt="forward" style="margin-top:-30px;margin-left:51px;"/> </p>
+  
+  
+</div>
+  <div  style="background-color:#d8d9ff;width:100px;height:100px;border-radius:20px;margin-left:100px;">
+    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/7F27FF/siren.png" alt="siren" style="margin-top:17px;margin-left:18px;"/>
+ <p style="margin-left:14px;margin-top:3px;">Emergency<img width="11" height="11" src="https://img.icons8.com/ios-glyphs/11/000000/forward.png" alt="forward" style="margin-top:-30px;margin-left:50px;"/> </p>
+  </div>
+ </div>
+</div>
+<!--schedule,notification-->
+      <!--review-->
+      <h1 class="p-5 d-block">customer Review</h1>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    
+        <div class="carousel-indicators" style="margin:auto;">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="6000">
+            <div class="card text-bg-info" style="width: 550px;height:250px;margin:auto;">
+                <img src="siemen.jpg" class="card-img-top" id="art">
+               
+                <div class="card-body text-bg-info">
+                  <h1 class="card-title" style="margin-left: 220px;">Siemen</h1> 
+                  <i class="fa-solid fa-quote-left fa-2xl" style="margin-left:50px;"></i>
+                          
+                  <p class="card-text" style="margin-left:80px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <i class="fa-solid fa-quote-right fa-2xl" style="margin-left:450px;"></i>
+                  <br>
+                  <i class="fa-solid fa-star" style="color: #dcf80d;margin-left: 235px;"></i>
+                  <i class="fa-solid fa-star" style="color: #dcf80d;"></i><i class="fa-solid fa-star" style="color: #dcf80d;"></i><i class="fa-solid fa-star" style="color: #dcf80d;"></i><i class="fa-solid fa-star" style="color: #dcf80d;"></i>
+                </div>
+    
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <div class="card text-bg-info" style="width: 550px;height:250px;margin:auto;">
+              <img src="john.jpg" class="card-img-top" id="art">
+              <div class="card-body text-bg-info">  
+                <h1 class="card-title" style="margin-left: 230px;">John</h1> 
+                  <i class="fa-solid fa-quote-left fa-2xl" style="margin-left:50px;"></i>
+                          
+                  <p class="card-text" style="margin-left:80px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <i class="fa-solid fa-quote-right fa-2xl" style="margin-left:450px;"></i>
+                  <br>
+                  <i class="fa-solid fa-star" style="color: #dcf80d;margin-left: 235px;"></i>
+                  <i class="fa-solid fa-star" style="color: #dcf80d;"></i><i class="fa-solid fa-star" style="color: #dcf80d;"></i><i class="fa-solid fa-star" style="color: #dcf80d;"></i><i class="fa-solid fa-star" style="color: #dcf80d;"></i>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="6000" > 
+            <div class="card text-bg-info" style="width: 550px;height:250px;margin:auto;">
+              
+              <img src="julia.jpg" class="card-img-top" id="art">
+                <div class="card-body text-bg-info">  
+                  <h1 class="card-title" style="margin-left: 230px;">Julia</h1> 
+                  <i class="fa-solid fa-quote-left fa-2xl" style="margin-left:50px;"></i>    
+                  <p class="card-text" style="margin-left:80px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <i class="fa-solid fa-quote-right fa-2xl" style="margin-left:450px;"></i>
+                  <br>
+                  <i class="fa-solid fa-star" style="color: #dcf80d;margin-left: 235px;"></i>
+                  <i class="fa-solid fa-star" style="color: #dcf80d;"></i><i class="fa-solid fa-star" style="color: #dcf80d;"></i><i class="fa-solid fa-star" style="color: #dcf80d;"></i>
+            
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <!--article-->
+      <!--faq-->
+</body>
+</html>
